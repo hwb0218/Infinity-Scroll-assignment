@@ -1,24 +1,24 @@
+import React from "react";
 import styled from "styled-components";
 
-const Card = () => {
+const Card = ({ cardData }) => {
   return (
-    <CardItem>
-      <div>
-        <span>Comment id</span>
-        {/* id */}
-        <span>This is id</span>
-      </div>
-      <EmailWrapper>
-        <span>Email</span>
-        {/* email */}
-        <span>This is email</span>
-      </EmailWrapper>
-      <div>
-        <p>Comment</p>
-        {/* comment */}
-        <div>This is comment</div>
-      </div>
-    </CardItem>
+    cardData && (
+      <CardItem>
+        <div>
+          <Title>Comment id</Title>
+          <Content>{cardData.id}</Content>
+        </div>
+        <EmailWrapper>
+          <Title>Email</Title>
+          <Content>{cardData.email}</Content>
+        </EmailWrapper>
+        <div>
+          <CommentTitle>Comment</CommentTitle>
+          <div>{cardData.body}</div>
+        </div>
+      </CardItem>
+    )
   );
 };
 
@@ -32,6 +32,23 @@ const CardItem = styled.div`
   & + & {
     margin-top: 14px;
   }
+`;
+
+const Title = styled.span`
+  font-size: 18px;
+  font-weight: bold;
+  color: #212529;
+`;
+
+const Content = styled.span`
+  margin-left: 12px;
+`;
+
+const CommentTitle = styled.p`
+  margin-bottom: 2px;
+  font-size: 18px;
+  font-weight: bold;
+  color: #212529;
 `;
 
 const EmailWrapper = styled.div`
