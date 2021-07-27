@@ -4,8 +4,8 @@
 
 ## 개요
 
-Intersection Observer API를 사용한 무한스크롤 구현입니다.
-기존 Scroll Event가 렌더링을 계속 발생 시킨다는것을 인지, 개선을 위해
+Intersection Observer API를 사용한 무한스크롤 구현입니다.     
+기존 Scroll Event가 렌더링을 계속 발생 시킨다는것을 인지, 개선을 위해     
 Intersection Observer API를 사용 해 보았습니다.
 
 ## 설치 / 사용 방법
