@@ -1,5 +1,14 @@
 # Infinity Scroll Assignment
 
+</br>
+
+## Team
+
+### 👨‍💻[김민기](https://github.com/mong-byte)     
+### 👨‍💻 [한우빈](https://github.com/hwb0218)
+
+</br>
+
 ![infinify-scroll](https://user-images.githubusercontent.com/75971035/127178312-b1a6db13-0f24-4532-853f-24404e9b1b99.gif)
 
 ## 개요
